@@ -16,6 +16,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              cd ~vjasani/cmsc389T-web-template
+              cd terpconnect.umd.edu/~vjasani/cmsc389T-web-template
               git pull
 

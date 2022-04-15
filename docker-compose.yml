@@ -3,11 +3,16 @@ version: '3'
 services:
   nodejs:
     #fill out the configuration here
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: srnodeapp
+    container_name: srnodeapp
     networks:
       - app-network
-  
+
   #the nginx configuration is given below
-  #the website will run on localhost:80 
+  #the website will run on localhost:80
   webserver:
     image: nginx:mainline-alpine
     container_name: webserver
@@ -28,9 +33,9 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /absolute/path/to/web/template/folder
+      device: ./
       o: bind
 
 networks:
   app-network:
-    driver: bridge 
+    driver: bridge

@@ -11,5 +11,5 @@
          4. Changed alignment of text.
          5. Changed size of image.
          
-[Link to Terpconnect](https://terpconnect.umd.edu/~vjasani/cmsc389T-web-template)
+[Link to Terpconnect](https://terpconnect.umd.edu/~vjasani/)
 

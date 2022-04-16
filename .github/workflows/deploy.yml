@@ -1,8 +1,7 @@
 name: deploy
 on: 
-  push:
-    branches: [main]
-#  workflow_dispatch: # uncomment this line and comment above to disable deploy on push
+  workflow_dispatch: # uncomment this line and comment above to disable deploy on push
+  
 jobs:
   deploy:
     name: Deploy
